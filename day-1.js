@@ -26,11 +26,12 @@ function score(vault) {
 }
 
 // Main
-	for (line in input) {
-	vault = rotate(vault, line)
-	console.log(vault)
+for (let line in input) {
+  //console.log(input[line])
+	vault = rotate(vault, input[line])
+	//console.log(vault)
 	vault = calc(vault)
-	console.log(vault)
+	//console.log(vault)
 	score(vault)
 }
-console.log(pass)
+console.log("Winner: " + pass)
