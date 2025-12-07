@@ -5,7 +5,7 @@ const fs = require('fs');
 // Variables
 let vault = 50
 let pass = 0
-let input = fs.readFileSync('input', 'utf8').split("\n");
+let input = fs.readFileSync('small-input.txt', 'utf8').split("\n");
 
 // Functions
 function rotate(vault, input) {
