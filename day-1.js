@@ -1,9 +1,20 @@
 // AOC 2025 Day 1 Part 1
 
+// User Input 
+// let input = process.arg[3];
+
 // Variables
 let vault = 50
 let pass = 0
+// input = input.split(" ");
+
 let input = ["L68", "L30", "R48", "L5", "R60", "L55", "L1", "L99", "R14", "L82"];
+
+process.argv.forEach((val, index) => {
+  console.log(`${index}: ${val}`);
+});
+
+console.log(process.argv[2]);
 
 // Functions
 function rotate(vault, input) {
